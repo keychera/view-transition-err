@@ -1,6 +1,6 @@
 # small reproducible example
 
-need [babashka][https://book.babashka.org/#_installation]
+need [babashka](https://book.babashka.org/#_installation)
 
 run 
 
