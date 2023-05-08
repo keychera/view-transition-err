@@ -1,0 +1,6 @@
+{:paths ["src"]
+ :tasks {serve {:task serve/-main}
+         panas.reload {:extra-deps {io.github.keychera/panas.reload {:git/sha "b1c7fa854256007a511256c5c43f2ab45e41bd7a"}}
+                       :requires ([clojure.string :as str] panas.reload  main)
+                       :task (panas.reload/-main main/router {:url "localhost" :port 4242}
+                                                 {:reloadable? (fn [uri] (= uri "/"))})}}}
