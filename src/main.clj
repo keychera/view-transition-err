@@ -5,7 +5,7 @@
             [selmer.parser :refer [render-file]]))
 
 (defn new-content []
-  (str (html [:div.slide-it
+  (str (html [:div
               [:h4 "New Content"]
               [:button {:hx-get "/initial-content"
                         :hx-swap "innerHTML transition:true"
@@ -13,7 +13,7 @@
                "Restore It!"]])))
 
 (defn initial-content []
-  (str (html [:div.slide-it
+  (str (html [:div
               [:h4 "Initial Content"]
               [:button {:hx-get "/new-content"
                         :hx-swap "innerHTML transition:true"
